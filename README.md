@@ -1,6 +1,6 @@
 # Sistema de Autenticação com Flask
 
-Este é um projeto Flask que implementa um sistema de autenticação básico, permitindo que os usuários façam login e acessem um dashboard, com plotly, com seus próprios dados(mockados).
+Este é um projeto Flask que implementa um sistema de autenticação básico, permitindo que os usuários façam login e acessem um dashboard, com plotly, com seus próprios dados.
 
 ## Funcionalidades
 
@@ -20,3 +20,5 @@ git clone https://github.com/mcarina/dashboard-dinamico-com-login.git
 ```bash
 pip install -r requirements.txt
 ```
+
+>com banco de dados sqlite.
