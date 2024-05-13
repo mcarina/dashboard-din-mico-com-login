@@ -1,0 +1,18 @@
+# Use uma imagem base Python
+FROM python:3.11-slim
+
+# Define o diretório de trabalho no container
+WORKDIR /projeto_bi
+
+# Copia o arquivo de dependências e instala as dependências sem usar cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copia o restante dos arquivos do projeto para o container
+COPY . .
+
+# Expõe a porta 5001 no container
+EXPOSE 5001
+
+# Comando para iniciar a aplicação
+# CMD ["gunicorn", "--bind", "0.0.0.0:5001", "app:app", "--reload"]

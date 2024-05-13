@@ -49,4 +49,5 @@ def logout():
     return redirect('/')
 
 if __name__ == '__main__':
+    app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(seconds=3600)
     app.run(debug=True, port=5001, host='0.0.0.0')
